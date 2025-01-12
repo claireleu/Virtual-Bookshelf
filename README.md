@@ -1,1 +1,2 @@
 # Visionary
+#privacy policy:
