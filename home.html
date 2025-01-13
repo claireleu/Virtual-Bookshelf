@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ the_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="topnav">
+    <a class="active" href="/">Home</a>
+    <a href="/library">Bookshelf</a>
+    <a href="/search">Search</a>
+</div>
+
+<div id="container">
+<h2>Welcome to Hollow Archive</h2>
+<p>Search for books, and save for later</p>
+</div>
+
+<div class="home-buttons">
+    <a href="/library">My Bookshelf</a>
+    <a href="/search">Go Search!</a>
+</div>
+
+</body>
+</html>

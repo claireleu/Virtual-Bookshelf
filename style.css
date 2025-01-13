@@ -1,0 +1,118 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #402e1c;
+    margin: 0;
+    padding: 20px;
+}
+
+#container {
+    background-color: #eedfc5;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 20 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#page-desc {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;         
+    align-items: center; 
+    margin-top: 10px;
+    text-align: center;
+    gap: 100px;
+}
+
+.home-buttons a {
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    background-color:#92725e;
+    color:#ffffff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.home-buttons a:hover {
+    background-color: #c7aa89;
+    color: white;
+  }
+
+
+#searchbar form{
+    display: flex;
+    justify-content:center;
+    padding: 10px;
+}
+
+#searchbar input {
+    display: flex;
+    width: 600px;
+    height: 80px;
+    padding: 0 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+#searchbar button {
+    padding: 0 20px;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;             
+    justify-content: center;   
+    align-items: center; 
+    width: 84px;
+    height: 84px;
+    margin-left: 10px;  
+    box-shadow: none;
+}
+#searchbar button img {
+    height: 80px; 
+    width: 80px; 
+    object-fit: contain; 
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #d1b195;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Links inside the topnav */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Hover effect for links */
+  .topnav a:hover {
+    background-color: #d7bcab;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Active link style */
+  .topnav a.active {
+    background-color: #70583f;
+    color: white;
+  }
+
+  #search-results {
+    color:#ffffff
+  }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ the_title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="topnav">
+	<a href="/">Home</a>
+	<a href="/library">Bookshelf</a>
+	<a class="active" href="/search">Search</a>
+</div>
+
+<div id="page-desc">
+<h2>Book Recommender</h2>
+<p>what type of book are you looking for?</p>
+</div>
+
+<div id="searchbar">
+    <form action="/search" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">
+            <img src="{{ url_for('static', filename='images/search-icon.jpg') }}" alt="icon">
+        </button>
+    </form>
+</div>
+
+
+ <!-- Conditional Content Display -->
+ {% if image and results %}
+ <div id="search-results">
+	<h2>Search Results for "{{description}}":</h2>
+	<p>{{results}}</p>
+</div>
+
+{% elif image and not results %}
+<div id="search-results">
+	<h2>Search Results for "{{description}}":</h2>
+	<p>No results found for "{{description}}". Please try a different genre.</p>
+</div>
+
+{% else %}
+{% endif %}
+
+</body>
+</html>
